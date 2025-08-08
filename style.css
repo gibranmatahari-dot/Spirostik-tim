@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #044239;
+}
+
+.logo-container {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.logo-container img {
+    width: 400px;       /* Lebar gambar */
+    height: 200px;      /* Tinggi gambar */
+    object-fit: contain; /* Mempertahankan aspect ratio */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    background: white;
+}
+
+
+h1 {
+    color: #b9f3ff;
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+    /* Untuk label input */
+    .input-section label {
+        color: #fdfaf8; /* Warna coklat */
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    
+    /* Untuk teks info */
+    .info-section p {
+        color: #d6dee6; /* Warna biru */
+        font-size: 16px;
+        margin: 8px 0;
+    }
+    
+    /* Untuk nilai/number */
+    #formula, #angle {
+        color: #ece8e6; /* Warna oranye */
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    /* Opsional: style untuk input number */
+    input[type="number"] {
+        border: 2px solid #dfe7eb;
+        border-radius: 4px;
+        padding: 5px;
+        color: #37474f;
+    }
+
+
+.input-section input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 60px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+.info-section {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+#diagram-container {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+canvas {
+    display: block;
+}
