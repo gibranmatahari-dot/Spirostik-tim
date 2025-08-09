@@ -104,3 +104,28 @@ button:hover {
 canvas {
     display: block;
 }
+
+/* Tambahkan di bagian CSS */
+.instructions {
+    background-color: #044239;
+    border-left: 4px solid #f5f7f5;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.instructions h3 {
+    color: #f2f6f2;
+    margin-top: 0;
+    text-align: center;
+}
+
+.instructions ol, .instructions ul {
+    padding-left: 20px;
+    color: white
+}
+
+.instructions li {
+    margin-bottom: 8px;
+    color: rgb(199, 81, 81)
+}
