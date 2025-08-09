@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Interaktif Filotaksis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+<style>
+        /* Tambahkan style untuk footer */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            color: #f3eeee;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Diagram Filotaksis Daun</h1>
+
+            <div class="container">
+        <h1>Visualisasi Filotaksis</h1>
+        
+        <!-- INSTRUKSI PENGGUNAAN -->
+        <div class="instructions">
+            <h3>Petunjuk Penggunaan:</h3>
+            <ol>
+                <li>Amati susunan daun, apakah tersebar, berhadapan, atau berkarang</li>
+                <li>Pilih daun pertama yang akan dijadikan sebagai titik awal pengamatan</li>
+                <li>Cari daun yang sejajar dengan daun pertama</li>
+                <li>Hitung jumlah daun yang dilewati garis spiral dari daun pertama hingga daun yang sejajar. Hitung juga berapa kali garis spiral tersebut melingkar hingga mencapai daun yang sejajar </li>
+                <li>Masukkan <strong>pembilang (Putaran)</strong> dan <strong>penyebut (Jumlah daun)</strong></li>
+                <li>Klik <strong>Generate Diagram</strong> untuk menampilkan visualisasi diagram berdasarkan rumus yang telah ditentukan</li>
+                <li>Keterangan:
+                    <ul>
+                        <li>Kiri + gerak    : Putar diagram</li>
+                        <li>Scroll          : Zoom in/out</li>
+                        <li>Kanan + gerak   : Geser pandangan</li>
+                        <li>Pembilang       : Berapa garis spiral yang melingkar hingga mencapai daun yang sejajar</li>
+                        <li>Penyebut        : Berapa jumlah daun yang dilewati garis spiral dari daun pertama hingga daun yang sejajar</li>
+                    </ul>
+                </li>
+        </div>
+
+        <div class="input-section">
+            <label for="numerator">Putaran (pembilang):</label>
+            <input type="number" id="numerator" min="1" value="2">
+            
+            <label for="denominator">Jumlah Daun (penyebut):</label>
+            <input type="number" id="denominator" min="1" value="5">
+            
+            <button id="generate-btn">Generate Diagram</button>
+        </div>
+        
+        
+        <div class="info-section">
+            <p>Rumus filotaksis: <span id="formula">2/5</span></p>
+            <p>Derajat antara daun: <span id="angle">144°</span></p>
+        </div>
+        
+        <div id="diagram-container"></div>
+    </div>
+
+    <!-- Tambahan gambar -->
+        <div class="logo-container">
+            <img src="media/Screenshot 2025-08-08 080143.png" alt="Logo Filotaksis">
+        </div>
+    </div>
+
+    <!-- Tambahkan footer di sini -->
+    <footer class="footer">
+        Made by. SPIROSTIK TEAM
+    <footer class="footer">
+        Andi Muh. Kholil Gibran Rusli, Arizka Amaliah.M, and Resky Ayu
+    <footer class="footer">
+        Dosen Pembimbing: Dian Dwi Putri Ulan Sari Patongai, S.Pd., M.Pd
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
